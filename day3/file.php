@@ -9,7 +9,6 @@ method: implicit
 */
 
 $client_id ="[YOUR-CLIENT-ID-HERE]"; // client = test2
-$client_secret = "[YOUR-CLIENT-SECRET-HERE]";
 $redirect_uri ="http://multimusen.dk/instagram/loginok.php"; // this file will receive the token
 
 $urlOne = "https://api.instagram.com/oauth/authorize/?client_id=" . $client_id 
