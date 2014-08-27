@@ -1,22 +1,11 @@
 <?
 // session_start(); // if needed
-
-/* 
+/*
 file: authToken.php
 purpose: try to authentiate Instagram API
 by: petj
 licence: GPLv3
 method: implicit
-
-The file is made according to "Explicit Authentiation"
-http://instagram.com/developer/authentication/
-*/
-
-/* Step One */
-
-/*
-- "Direct your user to our authorization URL"
-The url is: https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
 */
 
 $client_id ="[YOUR-CLIENT-ID-HERE]"; // client = test2
@@ -30,6 +19,5 @@ $urlOne = "https://api.instagram.com/oauth/authorize/?client_id=" . $client_id
 header("Location: $urlOne"); 
 
 /* If you get an error like "0auth is disabled" then edit the client and enable it! */
-
 
 ?>
