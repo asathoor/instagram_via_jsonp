@@ -1,9 +1,7 @@
-The Instagram API and Jsonp
-===========================
+3rd Semester 2014 Fall
+======================
 
-## Get popular images from Instagram
-This file will get popular images from Instagram. 
+# Creative Advertizer
 
-## 3rd Semester 2014 Fall
-The file is part of my third semester 2014 teachings at the Multimedia Designer Programme at Business Academy Aarhus.
-On the third semester we will work with APIs and Social Media.
+## APIs
+Our first theme is API. We use the Instagram API as a sample.
