@@ -20,7 +20,7 @@
 	$(document).ready(function() {
 	
 		var token = "[YOUR-TOKEN-HERE]"; // a token is temporary. If revoked you'll get an error 429.
-		var client_id = "[YOUR-CLIENT-ID-HERE]"; // add if you need it
+		var client_id = "client_id=" + "[YOUR-CLIENT-ID-HERE]"; // add if you need it
 		var tag = "Aarhus"; // try: split the url into smaller parts via variables (and reuse your code!)
 		var url = "https://api.instagram.com/v1/tags/aarhus/media/recent?" + client_id;
 		
