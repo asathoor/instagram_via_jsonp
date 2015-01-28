@@ -5,7 +5,7 @@
 <meta name="generator" content="Bluefish 2.2.5" >
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-<!-- link to jQuery -->
+<!-- link to jQuery it's hosted locally on a server you may point to e.g. google's version -->
 <script src="jquery-2.1.1.min.js"></script>
 
 </head>
@@ -25,10 +25,39 @@
 <div id="pics"></div>
 
 
-<!-- place the ajax script below towards the end of the html file so that Ajax may find the relevant tags -->
+
+<!-- place ajax script here so that Ajax may find the relevant tags -->
 
 <script type="text/javascript">
-var client_id = "[YOUR CLIENT ID GOES HERE]";
+
+/*
+USER ID
+Sometimes the API needs the Instgram user-id.
+It's a number, you'll find it here:
+http://jelled.com/instagram/lookup-user-id
+*/
+
+/*
+JQUERY
+It's a "selfrunning" function invoking ajax.
+The base code is:
+
+(function(){
+  console.log('There is a house in New Orleans, ...');
+})();
+
+JSONP RESPONSE
+If the response from the server is 200, or success,
+the anonymous function will parse the data,
+and a loop will append the data to the <div id="pics">.
+
+JSON OPEN DATA SOURCES
+Here are some open data sources:
+http://blog.visual.ly/data-sources/ 
+
+*/
+
+var client_id = "[copy-your-id-here-from-instagram-developer-clients-and-remove-the-sharp-brackets]";
 
 $(function() {
     $.ajax({
