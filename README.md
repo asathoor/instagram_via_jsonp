@@ -10,8 +10,10 @@ In order to embed your instagram feed you can use a service like Snapwidget.com 
 * By thine own ingenium find better alternatives.
 
 
-## Old code
+## Why Instagram Changed its API?
 
-Around 2015 or so Instagram changed the API in order to stop malicious hacks. So the files in the folder `deprecated` are pure web archeology - after the API changes, the files don't work any more.
+Around 2015 or so Instagram changed the API in order to stop malicious hacks. 
 
 * Mac Rumours (2015): [Instagram Institutes API Changes That Will Kill Off Malicious Third-Party Apps](https://www.macrumors.com/2015/11/17/instagram-new-api-changes/)
+
+The files in the folder `deprecated` are pure web archeology - after the API changes, the files don't work any more. 
