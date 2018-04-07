@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Points on a map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        width: 100%;
+        height: 333px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <article>
+        <section>
+            <div id='map'></div>
+            <h3>Betalingsparkering i Aarhus</h3>
+            <p>Datasæt fra Open Data Aarhus</p>
+            <p><a href="https://portal.opendata.dk/dataset/betalings-p-omrader">ODAA: betalingsparkering i Aarhus</a></p>
+            <p><em>NB:</em> Geojson fra ODAA følger et forældet format. Linje to skal fjernes. Den ser sådan ud:</p>
+            
+            <pre>
+                "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } }
+            </pre>
+            
+            <p>
+                Se det redigerede datasæt <a href="betalingspomraaderveje.json"></a>
+            </p>
+            
+        </section>
+    </article>
+    
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXNhdGhvb3IiLCJhIjoiY2oyd3hlbzU3MDA5NzJxbm9iMjczanJndCJ9.HahDB7Z1rrD5THIYQh6t4g'; // replace this with your access token
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/asathoor/cjf15jdvj3azv2rpexfa681sv' // replace this with your style URL
+    });
+    // code from the next step will go here
+    </script>
+  </body>
+</html>
